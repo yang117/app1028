@@ -1,4 +1,4 @@
-package com.yang.app1028;
+package com.yang.app1028.mvvm_recyclerview;
 
 import android.os.Bundle;
 import android.view.View;
@@ -9,9 +9,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.yang.app1028.adapters.RecyclerAdapter;
+import com.yang.app1028.mvvm_recyclerview.adapters.RecyclerAdapter;
 import com.yang.app1028.retrofit.gerrit.Controller;
-import com.yang.app1028.viewModels.MainActivityViewModel;
+import com.yang.app1028.mvvm_recyclerview.viewModels.MainActivityViewModel;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";

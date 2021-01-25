@@ -1,4 +1,4 @@
-package com.yang.app1028.adapters;
+package com.yang.app1028.mvvm_recyclerview.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.yang.app1028.R;
-import com.yang.app1028.models.NicePlace;
+import com.yang.app1028.mvvm_recyclerview.models.NicePlace;
 
 import java.util.ArrayList;
 import java.util.List;

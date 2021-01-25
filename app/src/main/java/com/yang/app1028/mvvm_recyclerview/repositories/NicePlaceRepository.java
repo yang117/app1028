@@ -1,8 +1,8 @@
-package com.yang.app1028.repositories;
+package com.yang.app1028.mvvm_recyclerview.repositories;
 
 import androidx.lifecycle.MutableLiveData;
 
-import com.yang.app1028.models.NicePlace;
+import com.yang.app1028.mvvm_recyclerview.models.NicePlace;
 
 import java.util.ArrayList;
 import java.util.List;

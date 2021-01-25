@@ -1,4 +1,4 @@
-package com.yang.app1028.models;
+package com.yang.app1028.mvvm_recyclerview.models;
 
 public class NicePlace {
 

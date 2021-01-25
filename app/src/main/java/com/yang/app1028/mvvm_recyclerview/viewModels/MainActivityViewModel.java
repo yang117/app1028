@@ -1,4 +1,4 @@
-package com.yang.app1028.viewModels;
+package com.yang.app1028.mvvm_recyclerview.viewModels;
 
 import android.os.AsyncTask;
 
@@ -6,8 +6,8 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.yang.app1028.models.NicePlace;
-import com.yang.app1028.repositories.NicePlaceRepository;
+import com.yang.app1028.mvvm_recyclerview.models.NicePlace;
+import com.yang.app1028.mvvm_recyclerview.repositories.NicePlaceRepository;
 
 import java.util.List;
 
