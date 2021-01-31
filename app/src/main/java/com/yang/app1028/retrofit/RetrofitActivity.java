@@ -23,8 +23,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.yang.app1028.R;
-import com.yang.app1028.retrofit.github.GithubService;
-import com.yang.app1028.retrofit.github.Repo;
 import com.yang.app1028.retrofit.stackOverflow.Answer;
 import com.yang.app1028.retrofit.stackOverflow.ListWrapper;
 import com.yang.app1028.retrofit.stackOverflow.Question;
@@ -69,16 +67,6 @@ public class RetrofitActivity extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_okhttp);
-    }
-
-    private void initGithubPage() {
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://api.github.com/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-        GithubService githubService = retrofit.create(GithubService.class);
-        Call<List<Repo>> call = githubService.listRepos("square");
-//        List<Repo> repos = call.execute().body();
     }
 
     /**

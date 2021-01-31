@@ -12,12 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".retrofit.youdao.YouDaoActivity">
+        <activity android:name=".rxjava.RxjavaActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".retrofit.youdao.YouDaoActivity" />
         <activity android:name=".mvvm_recyclerview.MainActivity" />
         <activity android:name=".retrofit.RetrofitActivity" />
         <activity android:name=".handler.HandlerActivity" />

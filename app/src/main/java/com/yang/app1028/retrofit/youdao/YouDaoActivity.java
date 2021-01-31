@@ -18,7 +18,6 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
-import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class YouDaoActivity extends AppCompatActivity {
@@ -36,7 +35,6 @@ public class YouDaoActivity extends AppCompatActivity {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("http://fanyi.youdao.com/") // 设置 网络请求 Url
                 .addConverterFactory(GsonConverterFactory.create()) // 支持Gson解析
-                .addCallAdapterFactory(RxJavaCallAdapterFactory.create()) // 支持RxJava平台
                 .build();
 //              .addConverterFactory(ProtoConverterFactory.create()) // 支持Prototocobuff解析
 
@@ -44,7 +42,6 @@ public class YouDaoActivity extends AppCompatActivity {
         GetRequestService service = retrofit.create(GetRequestService.class);
 
         //对 发送请求 进行封装
-//        Call<Translation> call = service.getCall();
         Call<Translation1> call1 = service.postCall("I love you");
 
         //6.发送网络请求(异步)

@@ -2,6 +2,7 @@ package com.yang.app1028.retrofit.youdao;
 
 import java.util.Map;
 
+import io.reactivex.Observable;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
@@ -30,7 +31,11 @@ public interface GetRequestService {
     // 采用@FormUrlEncoded注解的原因:API规定采用请求格式x-www-form-urlencoded,即表单形式
     // 需要配合@Field 向服务器提交需要的字段
 
-    @GET("ajax.php?a=fy&f=auto&t=auto&w=hello%20world")
+    @POST("translate?doctype=json&jsonversion=&type=&keyfrom=&model=&mid=&imei=&vendor=&screen=&ssid=&network=&abtest=")
+    @FormUrlEncoded
+    Observable<Translation1> postRxCall(@Field("i") String targetSentence);
+
+    @GET("ajax.php?a=fy&f=auto&t=auto&w=hello%20world") //不可用
     Call<Translation1> getCall();
     // @GET注解的作用:采用Get方法发送网络请求
 
