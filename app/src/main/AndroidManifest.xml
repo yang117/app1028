@@ -12,12 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".rxjava.RxjavaActivity">
+        <activity android:name=".webview.WebViewSampleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".webview.WebviewActivity" />
+        <activity android:name=".shengchanxiaofei.ProductConsumerActivity" />
+        <activity android:name=".rxjava.RxjavaActivity" />
         <activity android:name=".retrofit.youdao.YouDaoActivity" />
         <activity android:name=".mvvm_recyclerview.MainActivity" />
         <activity android:name=".retrofit.RetrofitActivity" />
